@@ -59,7 +59,7 @@ WHERE AereoportoDiArrivo IN (
 							)
 	AND
 	AereoportoDiPartenza IN (
-								SELECT *
+								SELECT Nome
 								FROM dbo.Aereoporti
 								WHERE Nazione != 'Italia'
 							)
