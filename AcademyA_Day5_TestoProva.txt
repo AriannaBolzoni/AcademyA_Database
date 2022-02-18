@@ -1,0 +1,43 @@
+Week 4 - Data
+
+Creare un database(NomeCognome.GestioneStrutture) che permetta di gestire le prenotazioni di varie 
+strutture.
+
+Le strutture hanno un nome, la città in cui si trovano, lo stato in cui si trovano, la tipologia
+della struttura, i servizi che offrono e le formule di pernottamento consentite.
+
+Le strutture possono essere agriturismi, hotel, casa vacanze, residence.
+I servizi che possono offrire sono piscina, wifi, cassaforte, spa&centro benessere, animali ammessi.
+Le tipologie di pernottamento consentite sono: solo pernottamento, pernottamento e prima colazione,
+mezza pensione, pensione completa.
+
+Ogni struttare avrà quindi un costo relativo a ogni tipo di pernottamento offerto espresso 
+per persona a giorno.
+
+Creare una stored procedure che, scelto un servizio, mostri tutte le strutture che lo offrono.
+Creare una stored procedure che, scelto un tipo di struttura, mostri le strutture di quel tipo.
+Creare una stored procedure che, scelto un tipo di pernottamento, mostri le strutture di quel tipo.
+
+Creare una stored procedure che scelta una struttura, una data di arrivo, una data di partenza 
+e il numero di persone per cui si vuole prenotare, salvi le informazioni in una tabella 
+chiamata Prenotazioni.
+La stored dovrà tenere traccia anche delle informazioni del cliente che effettua la prenotazione.
+
+SUGGERIMENTO: Creare una tabella Clienti per gestire le informazioni del cliente che effettua la 
+prenotazione(nome, cognome, data di nascita). La stored dovrà ricevere in ingresso anche 
+l'informazione del cliente.
+
+Creare una vista che mostri tutte le prenotazioni(cliente, data arrivo, data partenza, numero persone,
+nome struttura, tipo struttura, totale(prezzo * giorni * persone)
+
+Creare una vista che mostri il guadagno di ogni struttura.
+
+Creare una vista mostri tutti le strutture disponibili, la tipologia della struttura,
+i servizi offerti separati da virgola, le tipologie di pernottamento con i relativi prezzi.
+
+Quindi creare una stored procedure che ricevuti in ingresso la tipologia della struttura,
+un servizio offerto e una tipologia di pernottamento, mostri le strutture disponibili.
+
+
+Note - creare abbastanza casi che permettano la verifica del funzionamento
+delle viste e delle stored procedure
